@@ -109,3 +109,20 @@ var car = { //car 객체
 };
 
 car.starting();
+
+
+//여러가지 함수모양
+(function(){ //캡슐화
+  var a='a';
+  console.log(a);
+})(); //함수 바로 실행 -> 즉시실행함수
+
+//생략 가능한 전달 인자
+function sum(x, y) {
+  if (!y) y = 1;
+  console.log(x + y);
+}
+sum(3);
+console.log(sum(3)); //4
+console.log(sum(3,3)); //6
+
