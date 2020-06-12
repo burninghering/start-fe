@@ -1,3 +1,5 @@
+import { saveData } from './data-manager';
+
 const $result = document.querySelector('#result');
 
 function getTodosHtml(data) {
@@ -16,7 +18,9 @@ function getTodosHtml(data) {
 }
 
 function render(data) {
+  console.log('todos:', data);
   $result.innerHTML = getTodosHtml(data);
+  saveData(data);
 }
 
 export { render };

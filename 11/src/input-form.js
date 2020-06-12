@@ -17,7 +17,6 @@ function init(data) {
     render(data);
   });
 }
-
 export default {
   init,
 };
